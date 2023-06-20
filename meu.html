@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu código</title>
+</head>
+<body>
+    <script>
+        // Definindo um array de números
+        var numbers = [5, 9, 18, 25];
+
+        // Pedindo pro usuário digitar um número usando o prompt
+        var numberToFind = prompt("Digite um número:");
+
+        // Convertendo o que o usuário digitou para um número inteiro usando parseInt
+        numberToFind = parseInt(numberToFind);
+
+        // Procurando o primeiro número no array que seja maior que o número digitado pelo usuário
+        var result = numbers.find(number => number > numberToFind);
+
+        // Verificando se encontrou um número e exibindo uma mensagem correspondente usando alert
+        if (result) {
+            alert("O primeiro número acima desse que você digitou é " + result);
+        } else {
+            alert("Não foi encontrado nenhum número acima desse que você digitou");
+        }
+    </script>
+</body>
+</html>
+
+
